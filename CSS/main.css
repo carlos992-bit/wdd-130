@@ -1,16 +1,37 @@
-* a:link,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a:link,
 a:visited,
 a:active {
     text-decoration: none;
+}
+main{
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: block;
+    flex-wrap: wrap;
+    background-color: #58a0ff;
 }
 .main {max-width: 150px; height: auto;
 align-items: center;
 align-content: center;
 }
 ul{
-    list-style: none;
     margin: 0px;
     padding-left: 10px;
+    margin-left: 20px;
+}
+.liststyles1{
+    list-style-type: circle;
+    list-style-position:outside;
+}
+.image-list{
+    list-style: none;
 }
 p {
     width: 840px;
@@ -20,10 +41,17 @@ p {
     padding-left: 10px;
     font-family: 'Roboto',Verdana, Geneva, Tahoma;
 font-size: 20px;
+margin-left: 20px;
+}
+.parrafo1{
+    background-color: aquamarine;
+
 }
 .first-paragraph{
 padding-bottom: 10px;
-padding-left: 10px;    
+padding-left: 10px; 
+margin-left: 20px; 
+background-color: yellowgreen;  
 }
 .bottom-p{
     padding: 10px 0px 10px 10px;
@@ -32,21 +60,27 @@ padding-left: 10px;
     height: 100px;
     background-color: steelblue;
     display: flex;
-    align-content: center;
-    align-items: center;
-}
+    align-content: flex;
+    align-items: flex;
+    }
 .links{
     color: white;
 }
-.nav-main {background-color: steelblue;
+.nav-main {background-color: rgb(70, 180, 88);
 padding: 1px;
-display: block;
+display: center;
+}
+.nav-main-links{
+list-style: none;
+
 }
 .tittle-container{
 width: 840px;
-align-items: center;
-align-content: center;
+align-items: flex;
+align-content: flex;
 text-align: center;
+display: block;
+background-color: red;
 
 }
 h1 {color: steelblue;
@@ -68,15 +102,21 @@ h2 {color: steelblue;
 margin-bottom: 20px;
 margin-left: 150px;
 }
-.image-container{
+.m-0{
+    margin: none;
+}
+.myself-image-container{
 display: flex;
-background-color: rgb(255, 255, 255);
+background-color: rgba(255, 0, 0, 0.404);
 width: 840px;
 margin-bottom: 20px;
+list-style: none;
 }
 .paragraph-container{
     width: 840px;
-    display: block;
+    display: flexbox;
+    margin-left: 20px;
+background-color: teal;
 }
 .aside {width: 20px;
     margin: 1rem;
@@ -88,3 +128,14 @@ margin-bottom: 20px;
     footer {margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;}
+
+    /* Class Selectors */
+    .box {
+        margin: 1rem;
+        border: 1px; solid rgba(0,0,0,.1);
+        padding: 1rem;
+        background-color: #ddd;
+        color: #000;
+        width: 250px;
+        margin: 28px;
+    }
